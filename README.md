@@ -56,7 +56,7 @@ terraform Apply
 To destroy the created resources after testing.
 ``` 
 terraform destroy 
-```.
+```
 
 ## Summary
 This project goes beyond demonstrating Terraform's infrastructure provisioning capabilities; it emphasizes the utilization of Terraform for deployment provisioning. In complex deployment scenarios, leveraging configuration management tools such as Ansible, Puppet, and Chef is recommended for enhanced control and efficiency.
