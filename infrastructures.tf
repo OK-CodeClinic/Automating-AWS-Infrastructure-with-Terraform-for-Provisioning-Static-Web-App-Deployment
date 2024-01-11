@@ -78,7 +78,7 @@ resource "aws_instance" "public_ec2_instance" {
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.my_key_pair.key_name
   vpc_security_group_ids = [aws_security_group.my_SG_terraform.id]
-  subnet_id              = aws_subnet.public_subnet[0].id  # Assuming you want to use the first subnet
+  subnet_id              = aws_subnet.public_subnet[0].id # Assuming you want to use the first subnet
 
   tags = {
     Env = "Dev"
@@ -102,4 +102,12 @@ resource "aws_instance" "public_ec2_instance" {
     private_key = file("my-terra-key")
     host        = self.public_ip
   }
+}
+
+
+
+
+resource "aws_s3_bucket" "terraform_backend" {
+  bucket = "my_terraform_backend_storage"
+  acl    = "public"
 }
