@@ -41,6 +41,7 @@ terraform Apply
 - Assigns a key pair (```terra-key```), and associates the security group.
 - Deployment: Copies a local shell script (app.sh) to the EC2 instance and executes it using remote-exec.
 - Output: After the deployment is complete, Terraform will output the public and private IP addresses of the EC2 instance
+- It will store the terraform backened state in the s3 bucket created.
 
 
 #### What does ```app.sh``` does?
