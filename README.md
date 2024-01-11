@@ -23,7 +23,7 @@ cd Automating-AWS-Infrastructure-with-Terraform-for-Provisioning-Static-Web-App-
 ```
 terraform Initilize
 ```
-- Modify the variables in variables.tf to suit your requirements. For example, you can change the VPC CIDR block, subnet CIDR blocks, or specify a different EC2 instance type.
+- Modify the variables in variables.tf to suit your requirements. For example, you can change the VPC CIDR block, subnet CIDR blocks, or specify a different EC2 instance type, differenet Security Group rules.
 
 - Apply terraform configuration
 ```
@@ -59,7 +59,7 @@ terraform destroy
 ```
 
 ## Summary
-This project goes beyond demonstrating Terraform's infrastructure provisioning capabilities; it emphasizes the utilization of Terraform for deployment provisioning. In complex deployment scenarios, leveraging configuration management tools such as Ansible, Puppet, and Chef is recommended for enhanced control and efficiency.
+This project goes beyond demonstrating Terraform's infrastructure provisioning capabilities; it emphasizes the utilization of Terraform for deployment provisioning using the remote execution. In complex deployment scenarios, leveraging configuration management tools such as Ansible, Puppet, and Chef is recommended for enhanced control and efficiency.
 
 
 
