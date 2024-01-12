@@ -5,3 +5,5 @@
 .terraform/
 
 terraform.lock.hcl
+my-terra-key
+*.pub
